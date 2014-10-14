@@ -12,9 +12,9 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'genietheme' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'genietheme' ), 'WordPress' ); ?></a>
+                    &copy; 2003-2014 - <?php bloginfo( 'name' ); ?>
 			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'genietheme' ), 'GenieTheme', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
+			<a href="http://coregenie.com" target="_blank">CMS Design and Development Expert USA - COREGENIE TECHNOLOGIES</a>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

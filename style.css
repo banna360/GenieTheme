@@ -1,24 +1,12 @@
 /*
 Theme Name: GenieTheme
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
+Theme URI: http://coregenie.com
+Author: COREGENIE TECHNOLOGIES
+Author URI: http://coregenie.com
 Description: Description
 Version: 1.0-wpcom
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License: TO USE ONLY WITH COREGENIE TECHNOLOGIES WORDPRESS CMS PROJECTS
 Text Domain: genietheme
-Tags:
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-
- GenieTheme is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
-
-Resetting and rebuilding styles have been helped along thanks to the fine work of
-Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
-along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
-and Blueprint http://www.blueprintcss.org/
 */
 
 /*--------------------------------------------------------------
@@ -83,7 +71,7 @@ html {
 }
 
 body {
-	background: #fff; /* Fallback for when there is no custom background color defined. */
+	background: #E7E7E7; /* Fallback for when there is no custom background color defined. */
 }
 
 article,
@@ -150,7 +138,7 @@ select,
 textarea {
 	color: #404040;
 	font-family: sans-serif;
-	font-size: 16px;
+	font-size: 14px;
 	font-size: 1.6rem;
 	line-height: 1.5;
 }
@@ -162,7 +150,15 @@ h4,
 h5,
 h6 {
 	clear: both;
+      
 }
+
+h1 { font-size: 38px;}
+h2 { font-size: 33px;}
+h3 { font-size: 30px;}
+h4 { font-size: 28px;}
+h5 { font-size: 26px;}
+h6 { font-size: 25px;}
 
 p {
 	margin-bottom: 1.5em;
@@ -414,17 +410,17 @@ textarea {
 5.1 Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #000000;
+        text-decoration: none;
 }
 
-a:visited {
-	color: purple;
-}
+
 
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: #000000;
+        text-decoration: underline;
 }
 
 /*--------------------------------------------------------------
@@ -457,9 +453,11 @@ a:active {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	float: left;
 	position: absolute;
-	top: 1.5em;
+	top: 54px;;
 	left: -999em;
 	z-index: 99999;
+        background-color: #000;
+        
 }
 
 .main-navigation ul ul ul {
@@ -468,9 +466,12 @@ a:active {
 }
 
 .main-navigation ul ul a {
-	width: 200px;
+  border-bottom: 1px solid #3a3a3a;
+  border-right: medium none;
+  color: #ffffff;
+  padding: 15px;
+  width: 250px;
 }
-
 .main-navigation ul ul li {
 
 }
@@ -789,4 +790,135 @@ object {
 
 .gallery-caption {
 	display: block;
+}
+
+
+/*--------------------------------------------------------------
+12.3 COREGENIE TECHNOLOGIES STYLES
+--------------------------------------------------------------*/
+
+.site-header {
+    width: 1000px;
+    margin: 0 auto;
+  
+}
+.site-content {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+   
+    
+}
+.content-area {
+    width: 700px;
+    float: left;
+}
+.widget-area {
+    width: 300px;
+    float: left;
+    margin-top: 10px;
+   
+}
+
+.site-footer {
+    width: 1000px;
+    margin: 0 auto;
+    
+}
+/*---------------------------------------------------------------------*/
+
+.site-title a{   font-size: 30px; font-weight: bold;}
+
+.site-branding {
+    background-color: #ffffff;
+    padding: 15px;
+    
+    
+}
+
+.site-main { padding: 15px;}
+.widget-area {
+    
+    width: 300px;
+    float: left;
+   
+}
+.widget-area aside { background: #E7E7E7;  margin-right: 10px; }
+
+.widget-title {
+  background-color: #000;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.main-navigation { 
+    background-color: #000000;
+   
+}
+
+.nav-menu li a {
+  border-right: 1px solid #606060;
+  color: #ffffff;
+  margin-right: 3px;
+  padding: 15px;
+}
+.entry-title {
+  font-size: 35px;
+  font-weight: bold;
+}
+.site-info , .site-info a {
+  font-size: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
+.page-title {
+  font-size: 36px;
+}
+
+.entry-content table {
+    border-collapse: collapse;
+}
+
+.entry-content table, th, td {
+  border: 1px solid black;
+  padding: 10px;
+}
+.comments-area {
+  background: none repeat scroll 0 0 #f1f1f1;
+  font-size: 13px;
+  padding: 10px;
+}
+.comments-title {
+  border-bottom: 1px solid #d0d0d0;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+.comment.even {
+  background: none repeat scroll 0 0 #fefefe;
+  margin-bottom: 7px;
+  padding: 15px;
+}
+.comment.odd {
+  background: none repeat scroll 0 0 #fefefe;
+  margin-bottom: 7px;
+  padding: 15px;
+}
+.comment-reply-link {
+  background: none repeat scroll 0 0 #9f9e9e;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 5px;
+}
+.comment-reply-title {
+  border-bottom: 1px solid #dedddd;
+  font-size: 16px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.comment-respond {
+  background: none repeat scroll 0 0 #e4e4e4;
+  padding: 10px;
+  margin-top: 15px;
 }

@@ -61,11 +61,8 @@ function genietheme_setup() {
 		'aside', 'image', 'video', 'quote', 'link',
 	) );
 
-	// Setup the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'genietheme_custom_background_args', array(
-		'default-color' => 'ffffff',
-		'default-image' => '',
-	) ) );
+	
+        
 }
 endif; // genietheme_setup
 add_action( 'after_setup_theme', 'genietheme_setup' );
@@ -127,4 +124,11 @@ require get_template_directory() . '/inc/customizer.php';
 /**
  * Load Jetpack compatibility file.
  */
+
 require get_template_directory() . '/inc/jetpack.php';
+
+require_once( 'titan-framework/titan-framework-embedder.php' );
+
+// Check whether the Titan Framework plugin is activated, and notify if it isn't
+
+require_once( 'admin_options.php' );
